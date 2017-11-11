@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CACCF1301FB688BB0032F1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF12F1FB688BB0032F1E3 /* AppDelegate.swift */; };
-		CACCF1321FB688BB0032F1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF1311FB688BB0032F1E3 /* ViewController.swift */; };
 		CACCF1351FB688BB0032F1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACCF1331FB688BB0032F1E3 /* Main.storyboard */; };
 		CACCF1371FB688BB0032F1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CACCF1361FB688BB0032F1E3 /* Assets.xcassets */; };
 		CACCF13A1FB688BB0032F1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACCF1381FB688BB0032F1E3 /* LaunchScreen.storyboard */; };
 		CACCF1451FB688BB0032F1E3 /* MagicBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF1441FB688BB0032F1E3 /* MagicBallTests.swift */; };
 		CACCF1501FB688BB0032F1E3 /* MagicBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF14F1FB688BB0032F1E3 /* MagicBallUITests.swift */; };
+		CACCF15E1FB689760032F1E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF15D1FB689760032F1E3 /* MainViewController.swift */; };
+		CACCF1621FB692010032F1E3 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACCF1611FB692010032F1E3 /* Answers.swift */; };
+		CACCF1631FB69A760032F1E3 /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CACCF15F1FB68BC50032F1E3 /* Shakesound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		CACCF12C1FB688BB0032F1E3 /* MagicBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACCF12F1FB688BB0032F1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CACCF1311FB688BB0032F1E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CACCF1341FB688BB0032F1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CACCF1361FB688BB0032F1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CACCF1391FB688BB0032F1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		CACCF14B1FB688BB0032F1E3 /* MagicBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACCF14F1FB688BB0032F1E3 /* MagicBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallUITests.swift; sourceTree = "<group>"; };
 		CACCF1511FB688BB0032F1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CACCF15D1FB689760032F1E3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CACCF15F1FB68BC50032F1E3 /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
+		CACCF1611FB692010032F1E3 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				CACCF12F1FB688BB0032F1E3 /* AppDelegate.swift */,
-				CACCF1311FB688BB0032F1E3 /* ViewController.swift */,
+				CACCF15D1FB689760032F1E3 /* MainViewController.swift */,
 				CACCF1331FB688BB0032F1E3 /* Main.storyboard */,
 				CACCF1361FB688BB0032F1E3 /* Assets.xcassets */,
 				CACCF1381FB688BB0032F1E3 /* LaunchScreen.storyboard */,
 				CACCF13B1FB688BB0032F1E3 /* Info.plist */,
+				CACCF15F1FB68BC50032F1E3 /* Shakesound.wav */,
+				CACCF1611FB692010032F1E3 /* Answers.swift */,
 			);
 			path = MagicBall;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACCF1631FB69A760032F1E3 /* Shakesound.wav in Resources */,
 				CACCF13A1FB688BB0032F1E3 /* LaunchScreen.storyboard in Resources */,
 				CACCF1371FB688BB0032F1E3 /* Assets.xcassets in Resources */,
 				CACCF1351FB688BB0032F1E3 /* Main.storyboard in Resources */,
@@ -259,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CACCF1321FB688BB0032F1E3 /* ViewController.swift in Sources */,
+				CACCF15E1FB689760032F1E3 /* MainViewController.swift in Sources */,
+				CACCF1621FB692010032F1E3 /* Answers.swift in Sources */,
 				CACCF1301FB688BB0032F1E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R35829MY5Q;
 				INFOPLIST_FILE = MagicBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remitobias.MagicBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R35829MY5Q;
 				INFOPLIST_FILE = MagicBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remitobias.MagicBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
