@@ -20,7 +20,23 @@ class MainViewController: UIViewController {
         answerLabel.text = "Ask a question"
     }
 
-    @IBAction func getAsnwer(_ sender: Any) {
+    @IBAction func getAsnwerTapped(_ sender: Any) {
+        getAnswer()
+        playSound()
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == UIEventSubtype.motionShake {
+            getAnswer()
+            playSound()
+        }
+    }
+    
+    func getAnswer(){
         let randomNumber = Int(arc4random_uniform(UInt32(answers.count)))
         playSound()
         answerLabel.text = answers[randomNumber]

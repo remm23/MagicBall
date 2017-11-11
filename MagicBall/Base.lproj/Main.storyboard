@@ -39,7 +39,7 @@
                                 <color key="tintColor" red="0.99357547193776996" green="0.99705126760983098" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Get Answer"/>
                                 <connections>
-                                    <action selector="getAsnwer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyf-5u-LhJ"/>
+                                    <action selector="getAsnwerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkf-Fg-ICo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ta2-Vo-Bwj">
